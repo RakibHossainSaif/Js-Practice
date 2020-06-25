@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>JsPractice</title>
+    <script src="https://kit.fontawesome.com/856526d9f5.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/Icon.png">
+  </head>
+  <body>
+    <div class="container"><br>
+      <h1>Click the button for alert</h1><br>
+      <button id="alert" class="btn btn-success" type="button">Click me !</button>
+    </div><br><hr><br>
+    <div class="container">
+      <h1>Click the button to show/hide the text</h1><br>
+      <h3 id="or">Hello SSB-248</h3><br>
+      <button id="btn1" class="btn btn-dark" type="button">Show</button>
+      <button id="btn2" class="btn btn-info" type="button">Hide</button>
+    </div><br><hr><br>
+    <div class="container">
+      <h1>Click the button to show/hide the image</h1><br>
+      <img src="images/ssb.jpg." id="toggle" class="img-fluid" alt="students">
+      <br><br>
+      <button id="btn3" class="btn btn-dark" type="button">Toggle</button>
+    </div><br><hr><br>
+    <div class="container">
+      <h1>Click the button to show/hide the text</h1><br>
+      <h3 id="text2">Hello SSB-248</h3><br>
+      <button id="btn4" class="btn btn-info" type="button">Toggle</button>
+    </div><br><hr><br>
+    <div class="container">
+      <h1>Click the button to change the text</h1><br>
+      <h3 id="text">Hello SSB-248</h3><br>
+      <button class="btn btn-success" type="button" onclick="myContent()">Click me !</button>
+    </div><br><hr><br>
+    <div class="container">
+      <h1>Click the button to display the date</h1><br>
+      <h3 id="time">View date</h3><br>
+      <button class="btn btn-info" type="button" onclick="myTime()">Click me !</button>
+    </div><br><hr><br>
+    <div class="container">
+      <h1>Click the button to change the color</h1><br>
+      <h3 id="color">Hello SSB-248</h3><br>
+      <button class="btn btn-success" type="button" onclick="myContentColor()">Click me !</button>
+    </div><br><hr><br>
+    <div class="container">
+      <h1>Click the button to change the font size</h1><br>
+      <h3 id="fs">Hello SSB-248</h3><br>
+      <button class="btn btn-danger" type="button" onclick="myContentFs()">Click me !</button>
+    </div><br><hr><br>
+    <div class="container">
+      <h1>Click the button to on or off the bulb</h1><br>
+      <img id="bulb" src="images/off.gif" alt="off">
+      <hr>
+      <button class="btn btn-info" type="button" onclick="bulbOn()">Bulb On</button>
+      <button class="btn btn-dark" type="button" onclick="bulbOff()">Bulb Off</button>
+    </div><br><hr><br>
+    <div class="container">
+      <h1>Click the button to hide the message</h1><br>
+      <h3 id="hidden" style="display: block;">Hello SSB-248</h3><br>
+      <button class="btn btn-danger" type="button" onclick="myContentHidden()">Click me !</button>
+    </div><br><hr><br>
+    <div class="container">
+      <h1>Click the button to show the hidden message</h1><br>
+      <h3 id="show" style="display: none;">Hello SSB-248</h3><br>
+      <button class="btn btn-secondary" type="button" onclick="myContentShow()">Click me !</button>
+    </div><br><hr><br>
+    <!-- js links -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <!--<script src="js/popper.min.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        $('#alert').click(function(){
+          alert("assalamu alaikum");
+        });
+
+        $('#btn1').click(function(){
+          $('#or').show(1500);
+        });
+
+        $('#btn2').click(function(){
+          $('#or').hide(1500);
+        });
+
+        $('#btn3').click(function(){
+          $('#toggle').toggle(2500);
+        });
+
+        $('#btn4').click(function(){
+          $('#text2').toggle(2500);
+        });
+      });
+    </script>
+  </body>
+</html>
